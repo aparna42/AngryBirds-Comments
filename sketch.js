@@ -125,7 +125,7 @@ function keyPressed() {
 //Creates an asynchronous function getBackgroundImg
 async function getBackgroundImg() {
     //We use await to wait for the information to be retrieved from the API before the next instruction executes
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
     //We extract the json part from the PROMISE contained in the response from the API
     var responseJSON = await response.json();
     //We extract datetime from the json values in responseJSON
